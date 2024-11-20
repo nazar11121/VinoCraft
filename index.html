@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinoNova - Магазин Вина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>VinoNova - Магазин Вина</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#" id="cartLink">Кошик (0)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="catalog">
+        <h2>Наш каталог</h2>
+        
+        <!-- Продукт 1 -->
+        <div class="product">
+            <img src="wine1.jpg" alt="Вино червоне">
+            <h3>Вино червоне</h3>
+            <p>Ціна: 300 грн</p>
+            <button class="add-to-cart" data-id="1" data-name="Вино червоне" data-price="300">Додати в кошик</button>
+        </div>
+
+        <!-- Продукт 2 -->
+        <div class="product">
+            <img src="wine2.jpg" alt="Вино біле">
+            <h3>Вино біле</h3>
+            <p>Ціна: 250 грн</p>
+            <button class="add-to-cart" data-id="2" data-name="Вино біле" data-price="250">Додати в кошик</button>
+        </div>
+
+        <!-- Продукт 3 -->
+        <div class="product">
+            <img src="wine3.jpg" alt="Вино ігристе">
+            <h3>Вино ігристе</h3>
+            <p>Ціна: 350 грн</p>
+            <button class="add-to-cart" data-id="3" data-name="Вино ігристе" data-price="350">Додати в кошик</button>
+        </div>
+
+    </section>
+
+    <section id="cart" style="display: none;">
+        <h2>Кошик</h2>
+        <ul id="cartItems"></ul>
+        <p>Вартість: <span id="totalPrice">0</span> грн</p>
+        <button id="checkout">Оформити замовлення</button>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 VinoNova</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
